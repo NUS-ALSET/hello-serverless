@@ -1,0 +1,22 @@
+service: hello-serverless
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 1024
+  timeout: 30
+functions:
+  hello:
+    handler: index.handler
+    events:
+      - http:
+          path: hello
+          method: get
+          cors: true
+      - http:
+          path: main.js
+          method: get
+          cors: true
+      - http:
+          path: hello
+          method: post
+          cors: true
