@@ -1,3 +1,5 @@
+Travis badges
+
 
 # hello-serverless
 Minimal example to deploy a function to AWS lambda with an API gateway using serverless
